@@ -1,0 +1,72 @@
+$color_body: var(--color-body);
+$color_primary: var( --color-primary);
+$color_secondary: var(--color-secondary);
+$color_accent: var(--color-accent);
+
+$color_text: var(--color-text);
+$color_text_secondary: var(--color-text-secondary);
+
+$color_white: var(--color-white);
+
+$color_black: var(--color-black);
+$color_black_white: var(--color-black-white);
+
+$color_grey: var(--color-grey);
+
+$border_radius: 10px;
+$border_radius-xs: 15px;
+$border_radius-sm: 20px;
+$border_radius-md: 30px;
+$border_radius-lg: 40px;
+$border_radius-xl: 50%;
+
+$text_size: 18px;
+$text_size-xs: 10px;
+$text_size-sm: 16px;
+$text_size-md: 24px;
+$text_size-lg: 26px;
+$text_size-xl: 30px;
+
+$breakpoint-xs: 576px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+$breakpoint-xl: 1600px;
+
+$transition-xs: 0.2s;
+$transition-sm: 0.4s;
+$transition-md: 0.6s;
+$transition-lg: 0.8s;
+$transition-xl: 1s;
+
+$navbar-height: 70px;
+$container_width: 1440px;
+$border_test: 2px solid red;
+
+:root{
+    --color-body: #ffffff;
+    --color-primary: #4070F4;
+    --color-secondary: #0041a1;
+    --color-accent: rgba(117, 125, 218, 0.514);
+    --color-text: white;
+    --color-text-secondary: black;
+
+    --color-black: #181a1e;
+    --color-black-light: #202528;
+    --color-white: #ffffff;
+    --color-grey: #f5f5f5;
+}
+
+.dark{
+    --color-body: #181a1e;
+    --color-primary: #4070F4;
+    --color-secondary: #0041a1;
+    --color-accent: rgba(117, 125, 218, 0.514);
+    --color-text: black;
+    --color-text-secondary: white;
+
+    --color-black: #181a1e;
+    --color-black-light: #202528;
+    --color-white: #ffffff;
+    --color-grey: #f5f5f5;
+}

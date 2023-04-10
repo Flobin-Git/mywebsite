@@ -1,0 +1,119 @@
+section.kontakt{
+    height: auto;
+    background-color: $color_primary;
+
+    .info{
+        width: 100%;
+        padding-top: 100px;
+        text-align: center;
+        color: $color_text;
+
+        h2{
+            font-size: 70px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        mark{
+            color: $color_text;
+        }
+    }
+
+    form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 50px 0;
+
+        input{
+            width: 50%;
+            padding: 15px 20px;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+        }
+
+        textarea{
+            width: 50%;
+            padding: 15px 20px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            resize: none;
+        }
+
+        button{
+            width: 20%;
+            padding: 15px 20px;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            background-color: $color_white;
+            color: $color_primary;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        button:hover{
+            width: 15%;
+        }
+    }
+}
+
+@media (max-width: 1376px) {
+
+    section.kontakt form input{
+        width: 80%;
+    }
+
+    section.kontakt form textarea{
+        width: 80%;
+    }
+
+    section.kontakt form button{
+        width: 30%;
+    }
+
+    section.kontakt form button:hover{
+        width: 20%;
+    }
+}
+
+@media (max-width: 904px) {
+
+    section.kontakt form input{
+        width: 90%;
+    } 
+
+    section.kontakt form textarea{
+        width: 90%;
+    }
+
+    section.kontakt .info h2{
+        margin-bottom: 50px;
+        font-size: 50px;
+    }
+
+    section.kontakt form button{
+        width: 50%;
+    }
+
+    section.kontakt form button:hover{
+        width: 45%;
+    }
+}
+
+@media (max-width: 790px) {
+
+    section.kontakt .info p{
+        width: 70vw;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

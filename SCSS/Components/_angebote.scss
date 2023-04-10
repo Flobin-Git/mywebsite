@@ -1,0 +1,112 @@
+section.angebote{
+    margin-top: 200px;
+    height: auto;
+    background-color: $color_primary;
+    padding-bottom: 150px;
+
+    .info{
+        width: 100%;
+        padding-top: 100px;
+        text-align: center;
+        color: $color_text;
+
+        h2{
+            font-size: 70px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        mark{
+            color: $color_text;
+        }
+
+        p{
+            font-size: 20px;
+        }
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+        margin-top: 100px;
+
+        .box{
+            background-color: $color_white;
+            padding: 40px 0 0 0;
+            border-radius: 20px;
+            text-align: center;
+            color: $color_text_secondary;
+            transition: 0.5s;
+            position: relative;
+            height: 330px;
+
+            h3{
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+            p{
+                font-size: 18px;
+                margin-bottom: 25px;
+                padding: 0 35px;
+            }
+
+            a{
+                padding: 22px 20px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                cursor: pointer;
+                border-radius: 0px 0px 20px 20px;
+                width: 100%;
+                background-color: $color_secondary;
+                color: $color_text;
+                border: none;
+                transition: 0.5s;
+                font-size: 20px;
+            
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1376px){
+    section.angebote .container .box{
+        height: 330px;
+    }
+
+    section.angebote .container .box h3{
+        font-size: 22px;
+    }
+
+    section.angebote .container .box p{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1146px) {
+    section.angebote .container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section.angebote .container .box{
+        height: 300px;
+    }
+}
+
+@media (max-width: 904px) {
+    section.angebote .container{
+        width: 70%;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 790px) {
+    section.angebote .container{
+        width: 90%;
+    }
+}

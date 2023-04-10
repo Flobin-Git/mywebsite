@@ -1,0 +1,21 @@
+section.projekte{
+    height: auto;
+    background-color: $color_white;
+    padding-bottom: 150px;
+
+    .info{
+        width: 100%;
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .info h2{
+        font-size: 70px;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+
+    .info mark{
+        color: $color_primary;
+    }
+}
