@@ -34,7 +34,7 @@ section.angebote{
         .box{
             background-color: $color_white;
             padding: 40px 0 0 0;
-            border-radius: 20px;
+            border-radius: $border_radius-sm;
             text-align: center;
             color: $color_text_secondary;
             transition: 0.5s;
@@ -76,7 +76,7 @@ section.angebote{
     }
 }
 
-@media (max-width: 1376px){
+@media (max-width: $breakpoint-xl){
     section.angebote .container .box{
         height: 330px;
     }
@@ -90,7 +90,7 @@ section.angebote{
     }
 }
 
-@media (max-width: 1146px) {
+@media (max-width: $breakpoint-lg) {
     section.angebote .container{
         grid-template-columns: 1fr 1fr;
     }
@@ -100,20 +100,20 @@ section.angebote{
     }
 }
 
-@media (max-width: 904px) {
+@media (max-width: $breakpoint-md) {
     section.angebote .container{
         width: 70%;
         grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 790px) {
+@media (max-width: $breakpoint-sm) {
     section.angebote .container{
         width: 90%;
     }
 }
 
-@media (max-width: 535px) {
+@media (max-width: $breakpoint-xs) {
     section.angebote .info{
         h2{
             font-size: 45px;

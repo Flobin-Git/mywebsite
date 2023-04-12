@@ -57,7 +57,7 @@ section.skills{
     }
 }
 
-@media (max-width: 904px) {
+@media (max-width: $breakpoint-md) {
     section.skills .container{
         gap: 0;
     }
@@ -90,7 +90,7 @@ section.skills{
 
 }
 
-@media (max-width: 790px) {
+@media (max-width: $breakpoint-sm) {
     section.skills .info h2{
         margin-bottom: 25px;
     }

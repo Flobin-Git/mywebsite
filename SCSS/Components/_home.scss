@@ -50,7 +50,7 @@ section.home{
             background: $color_primary;
             color: $color_text;
             padding: 0.3rem;
-            border-radius: 50%;
+            border-radius: $border_radius-xl;
             height: 2rem;
             width: 2rem;
             display: flex;
@@ -80,7 +80,7 @@ section.home{
     }
 }
 
-@media (max-width: 1376px) {
+@media (max-width: $breakpoint-xl) {
     section.home{
 
         .info{
@@ -106,7 +106,7 @@ section.home{
     }
 }
 
-@media (max-width: 1146px) {
+@media (max-width: $breakpoint-lg) {
     section.home{
         margin-top: 0px;
     
@@ -130,7 +130,7 @@ section.home{
     }
 }
 
-@media (max-width: 904px) {
+@media (max-width: $breakpoint-md) {
     section.home{
         padding-top: 100px;
         
@@ -176,7 +176,7 @@ section.home{
 }
     
 
-@media (max-width: 535px) {
+@media (max-width: $breakpoint-xs) {
     section.home .socials {
         display: none;
     }
